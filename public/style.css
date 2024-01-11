@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Epilogue:wght@300;400&family=Happy+Monkey&family=Josefin+Sans&family=Knewave&family=Montserrat:wght@100;400;900&family=Red+Hat+Display:wght@300;400;500&family=Sacramento&display=swap');
+
+
+body{
+	font-family: 'Happy Monkey';
+}
+
+body.active{
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+.navbar{
+	background-color: grey;
+	display: flex;
+}
+
+.navbar > ul{
+	display: inline;
+	list-style: none;
+	margin-top: 40px;
+}
+
+.navbar > ul > li{
+	display: inline;
+	margin-left: 1.5rem;
+	margin-right: 1rem;
+	font-size: large;
+}
+
+.navbar > ul > li >a{
+	color: rgb(118, 118, 118);
+	text-decoration: none;
+	transition: 0.3s ease; 
+}
+
+.navbar > ul > li > a.active{
+	color: black;
+	font-weight: 800;
+}
+
+.navbar > ul > li > a:hover{
+	color: #64FFDB;
+}
+
+
+.logo-text{
+	font-size: 42px;
+}
+
+.logo{
+	margin: 30px 280px 0 0;
+}
+
+.logo > h3 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 0.65;
+}
+
+.logo > h3 > a{
+	text-decoration: none;
+	color: #F56B00;
+	font-family: 'knewave';
+}
+
+.nav-icons-ul{
+	list-style: none;
+	margin-top: 30px;
+}
+
+.nav-icons-items{
+	display: inline;
+	margin-right: 20px;
+	font-size: 22px;
+
+}
+
+.nav-icons-items > a{
+	text-decoration: none;
+}
+
+.social-icons svg {
+    fill: black; 
+    transition: fill 0.3s ease; 
+}
+
+.social-icons:hover svg {
+    fill: #64FFDB; 
+}
+
+.checkbtn{
+	position: absolute;
+	float: right;
+	font-size: 30px;
+	color: white;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 995px) {
+	
+}
+*/
+/* style part 2 */
+
+/* navbar links */
+
+.header{
+
+	display: flex;
+	position: fixed; 
+	height: 100px;
+	width: 100%;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+	background-color: white;
+	/* align-content: stretch;	 */
+	z-index: 1;
+}
+
+.navbar-items{
+	display: flex;
+	list-style: none;
+	margin-top: 3.1rem;
+}
+
+.navbar-items li a{
+	color: rgb(118, 118, 118);
+	text-decoration: none;
+	transition: 0.3s ease; 
+	margin-left: 2.5rem;
+	font-size: large;
+}
+
+.navbar-items li a:hover{
+	color: #64FFDB;
+}
+
+
+/* navbar Logo */
+.navbar-logo{
+	margin: 2rem 9rem 0 0;
+}
+
+.logo{
+	font-size: 3rem;
+}
+
+.logo a{
+	text-decoration: none;
+	/* font-family: 'knewave'; */
+
+	color: black;
+}
+
+.logo a:hover{
+	color: #64FFDB;
+	transition: 0.3s ease; 
+}
+
+/* social icons starts here */
+
+.navbar-icons{
+	margin: 2.5rem 2rem 0 0;
+}
+
+.navbar-icons .social-icons{
+	text-decoration: none;
+	font-size: 1.5rem;
+	margin-right: 1.5rem;
+	align-content: space-around;
+
+}
+
+.social-icons:hover svg {
+	fill: #64FFDB; 
+	transition: fill 0.3s ease; 
+    
+}
+
+.icon{
+	display: none;
+}
+
+.cross-icon{
+	display: none;
+}
+
+.menu-icon{
+	display: none;
+}
+
+/* Header ENDS HERE */
+
+/* body or main starts here */
+
+/* auto scroller */
+
+.scroll {
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	bottom: 40px;
+	right: -80px;
+	border-radius: 100%;
+	background-color: rgb(188, 190, 192);
+	color: #fff;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 0 0 5px 0px #888;
+	transition: 300ms;
+	opacity: 0.5;
+  }
+  
+  .scroll i {
+	text-shadow: 0 0 2px #fff;
+  }
+  
+  .scroll:hover i {
+	animation-name: rotate;
+	animation-duration: 300ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+  }
+  
+  @keyframes rotate {
+	from {margin-top: 15px}
+	to {margin-top: 5px}
+  }
+
+.visible {
+	right: 10px;
+	transition: all 400ms;
+	transform: rotate(360deg)
+  }
+
+main{
+	padding-top: 5rem;
+}
+
+.upper-half{
+	text-align: center;
+	background-color: #F1EFEC;
+	padding: 6rem 0;
+	height: 450px;
+
+}
+
+
+.main-slogan{
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.slogan-para{
+	font-size: 1.2rem;
+	color: rgb(116, 118, 119);
+	margin-bottom: 2rem;
+}
+
+.btn{
+	background-color: #0A1A31;
+	color: #00F1B9;
+	box-shadow: 0 4px 8px rgba(70, 72, 72, 0.5);
+	border-radius: 10px;
+	width: 7.5rem;
+}
+
+.btn:hover{
+	text-decoration: underline;
+	color: #43B299;
+	opacity: .9;
+	/* box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;*/
+	/* box-shadow: 0 4px 6px rgba(77, 250, 212, 0.5); */
+}
+
+.resume{
+	width: 7.5rem;
+	margin-left: 2rem;
+}
+
+.project-main-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	margin-top: 1rem;
+	
+}
+
+
+
+.project-sub-container{
+	height: 300px;
+    width: calc(33.33% - 2rem); /* 33.33% width with 2rem margin */
+	margin-left: 1.5rem;
+	margin-top: 1.5rem;
+	position: relative;
+	overflow: hidden;
+}
+/*
+.project-sub-container:hover{
+	opacity: 0.2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.4s ease;
+}
+
+.project-sub-container-name{
+	display: none;
+}
+
+.project-sub-container:hover .project-sub-container-name{
+	display: block;
+	font-size: 1.5rem;
+	color: black;
+
+}
+*/
+
+.project-sub-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.4s ease;
+}
+
+.project-sub-container p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.2s ease;
+	font-size: 2rem;
+	width: 100%;
+}
+
+.project-sub-container:hover img {
+    opacity: 0.1;
+}
+
+.project-sub-container:hover p {
+    opacity: 1;
+}
+
+
+
+/* body ends here */
+
+/* footer starts her e*/
+
+.main-footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-icons{
+	margin: 3rem 3rem 1rem 3rem;
+	display: flex;
+	gap: 2rem;
+	font-size: x-large;
+}
+
+.footer-social-icons{
+	align-content: space-around;
+}
+
+.copyright{
+	opacity: 0.5;
+	font-size: .8rem;
+}
+
+.footer-copyright{
+	margin-bottom: 4rem;
+}
+
+/* breakpoints for different sizes 
+@media screen and (min-width: 765px) and (max-width: 995px) {
+
+
+    .navbar-logo {
+        margin: 0;
+    }
+    
+    .navbar-items {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-items li {
+        margin-right: 15px;
+    }
+}
+*/
+
+
+@media (max-width: 960px) {
+
+	
+	.navbar-items, .navbar-icons{display: none;}
+
+	.icon{ 
+		display: block; 
+		color: black;
+		position: absolute;
+		right: 0;
+		margin: 1rem 2rem 0 0;
+	}
+
+	.icon:hover{
+		text-decoration: none;
+		color: #64FFDB; 
+		transition: 0.3s ease; 
+	}
+
+	.navbar-icons{
+		/*
+		position: fixed;
+		width: 100%; 
+		text-align: center;
+		border-top-width: 2px; 
+		border-top-style: solid; 
+		border-top-color: #0A1A31;
+		border-right: none; 
+		border-bottom: none; 
+		border-left: none;
+		padding: 2.5rem 0;
+		z-index: 999;*/
+
+		position: fixed; /* Set the position to fixed */
+		bottom: 0; /* Stick it to the bottom of the screen */
+		width: 100%;
+		text-align: center;
+		border-top-width: 2px;
+		border-top-style: solid;
+		border-top-color: #0A1A31;
+		border-right: none;
+		border-bottom: none;
+		border-left: none;
+		padding: 2.5rem 0;
+		background-color: #fff; /* Set a background color if needed */
+		z-index: 999; 
+
+	}
+
+	.navbar-icons .social-icons{
+		font-size: 2rem;
+	}
+
+	.navbar-logo{
+		position: absolute;
+		left: 1.5rem;
+	}
+
+	.responsive{
+		display: block;
+	}
+
+	.navbar-links {
+		display: flex;
+		height: 100vh;
+		width: 100%;
+		transform: translateY(-50%);
+		transition: transform 0.3s ease, opacity 0.3s ease; 
+		opacity: 0;
+		justify-content: center;
+		align-items: center;
+		padding: 0 3rem 10rem 0;
+	}
+	
+	.navbar-links.active, .navbar-icons.active {
+		opacity: 1; 
+		background-color: #e0e4e8;
+		transform: translateX(0); 
+		transition: transform 0.3s ease, opacity 0.3s ease; 
+	}
+
+    .navbar-items li {
+		margin-top: 4rem;
+		text-align: center;
+
+	}
+
+    .navbar-items li a {
+        font-size: 2.2rem;
+    }
+
+	.project-sub-container{
+		animation: shrink 0.7 ease forwards;
+		width: 45%;
+		width: calc(50% - 2rem);
+	}
+
+
+}
+
+@media screen and (max-width: 555px) {
+	.project-sub-container{
+		width: calc(100% - 2rem);
+		margin-right: 2rem;
+	}
+}
+
+/* displaying menu in the breakpoints */

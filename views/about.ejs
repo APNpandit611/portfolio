@@ -1,0 +1,59 @@
+<%- include('partials/header.ejs') %>
+
+    
+    <div class="upper-half">
+        <h2 class="main-slogan">Hi, I’m Abhishek Pandit!<br> A Software Developer.</h2>
+        <p class="slogan-para">Scroll down to know me!</p>
+        <button class="btn contact-me"> Contact</button>
+        <button class="btn resume"> Resume </button>
+    </div>
+
+    <!-- <div class="project-main-container">
+        <div class="project-sub-container" data-link="https://apnpandit611.github.io/cv/"><p class="project-sub-container-name">here goes the image</p></div>
+        <div class="project-sub-container" data-link="https://en.wikipedia.org/wiki/Ocean"><p class="project-sub-container-name">here goes the image</p></div>
+        <div class="project-sub-container"><p class="project-sub-container-name">here goes the image</p></div>
+        <div class="project-sub-container"><p class="project-sub-container-name">here goes the image</p></div>
+        <div class="project-sub-container"><p class="project-sub-container-name">here goes the image</p></div>
+        <div class="project-sub-container"><p class="project-sub-container-name">here goes the image</p></div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+        <i class="fa fa-angle-up"></i>
+        <script>
+          window.addEventListener('scroll', e => {
+            var el = document.getElementById('jsScroll');
+            if (window.scrollY > 200) {
+              el.classList.add('visible');
+            } else {
+              el.classList.remove('visible');
+            }
+          });
+  
+          function scrollToTop() {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          }
+        </script>
+      </div>
+
+
+
+<script>
+    $('.project-sub-container').click(function (){
+            var link = $(this).data('link');
+            window.open(link, '_blank');
+    });
+</script>
+<%- include('partials/footer.ejs') %>
