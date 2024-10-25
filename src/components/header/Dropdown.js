@@ -19,18 +19,15 @@ const Dropdown = () => {
                 <span className="sr-only">Open user menu</span>
                 <svg
                     
-                    class="h-10 w-10 text-slate-300"
+                    
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className={`w-10 h-10 ${isOpen ? 'text-red-500' : 'text-slate-300'}`}
+                    className={`w-10 h-10 ${isOpen ? 'text-yellow-800' : 'text-slate-300'}`}
                     
                     
                 >
                     <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16"
                     />
                 </svg>

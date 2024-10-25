@@ -1,7 +1,7 @@
 import React from "react";
-import image from "../assets/image.jpeg";
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+    const { title, code, live, image} = props.project
     return (
         <div className="border-2 border-gray-500 rounded-md w-full md:w-2/5 mb-8">
             <img
@@ -12,7 +12,7 @@ const ProjectCard = () => {
 
             <div className="p-4 flex flex-col gap-4">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-200 mb-2 text-center">
-                    Project Title
+                    {title}
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base text-slate-400 text-center mb-4">
                     A brief description of the project goes here, explaining key
@@ -20,18 +20,24 @@ const ProjectCard = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-evenly mt-3 space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href={code}>
+
                     <button
                         type="button"
                         className="text-xs sm:text-sm bg-slate-800 text-slate-300 py-2 px-4 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
                     >
                         View Code
                     </button>
+                    </a>
+                    <a href={live}>
+
                     <button
                         type="button"
                         className="text-xs sm:text-sm bg-slate-800 text-slate-300 py-2 px-5 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
                     >
                         Live Demo
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
