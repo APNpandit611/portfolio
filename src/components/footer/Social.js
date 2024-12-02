@@ -8,7 +8,7 @@ import {
 
 const Social1 = () => {
     return (
-        <div className=" fixed bottom-0 left-10">
+        <div className="fixed bottom-0 left-10 hidden md:block">
             <div className="text-slate-300 flex-col mt-8 hover:text-neutral-950 cursor-pointer duration-300 ease transition transform hover:-translate-y-0.5"><FaSquareGithub size={20} /></div>
             <div className="text-slate-300 flex-col mt-8 hover:text-blue-800 cursor-pointer duration-300 ease transition transform hover:-translate-y-0.5"><FaSquareFacebook size={20}/></div>
             <div className="text-slate-300 flex-col mt-8 hover:text-rose-900 cursor-pointer duration-300 ease transition transform hover:-translate-y-0.5"><FaSquareInstagram size={20} /></div>

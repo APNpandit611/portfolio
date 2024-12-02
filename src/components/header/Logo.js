@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo = () => {
     return (
-        <div>
+        
             <h2
                 className="
                     text-3xl
@@ -18,7 +18,6 @@ const Logo = () => {
             >
                 Abhishek
             </h2>
-        </div>
     );
 };
 

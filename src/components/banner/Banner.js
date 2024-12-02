@@ -3,7 +3,7 @@ import Button from "./Button.js";
 const Banner = ({ buttonName }) => {
     return (
         <div>
-            <div className="border-b border-gray-200 dark:border-gray-700 mx-16 text-slate-300 text-center pt-16 pb-20 z-1">
+            <div className="border-b border-gray-200 dark:border-gray-700 mx-8 text-slate-300 text-center pt-16 pb-20 z-1 md:mx-12">
                 <h1 className="text-3xl">
                     Hi, I'm Abhishek Pandit! <br />
                 </h1>

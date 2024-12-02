@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProjectCard = (props) => {
-    const { title, code, live, image} = props.project
+    const { title, code, live, image } = props.project;
     return (
         <div className="border-2 border-gray-500 rounded-md w-full md:w-2/5 mb-8">
             <img
@@ -19,24 +19,22 @@ const ProjectCard = (props) => {
                     features and technology stack.
                 </p>
 
-                <div className="flex flex-col sm:flex-row justify-evenly mt-3 space-y-3 sm:space-y-0 sm:space-x-4">
+                <div className="flex flex-col md:flex-row justify-evenly mt-3 space-y-3 md:space-y-0 md:space-x-4">
                     <a href={code}>
-
-                    <button
-                        type="button"
-                        className="text-xs sm:text-sm bg-slate-800 text-slate-300 py-2 px-4 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
-                    >
-                        View Code
-                    </button>
+                        <button
+                            type="button"
+                            className="w-full text-xs md:text-sm bg-slate-800 text-slate-300 py-2 px-4 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
+                        >
+                            View Code
+                        </button>
                     </a>
                     <a href={live}>
-
-                    <button
-                        type="button"
-                        className="text-xs sm:text-sm bg-slate-800 text-slate-300 py-2 px-5 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
-                    >
-                        Live Demo
-                    </button>
+                        <button
+                            type="button"
+                            className="w-full text-xs sm:text-sm md:w-full bg-slate-800 text-slate-300 py-2 px-5 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
+                        >
+                            Live Demo
+                        </button>
                     </a>
                 </div>
             </div>

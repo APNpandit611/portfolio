@@ -9,27 +9,37 @@ const Dropdown = () => {
     };
 
     return (
-        <div className="dropdown-container">
+        <div className="dropdown-container w-auto">
             <button
                 id="dropdownUserAvatarButton"
                 data-dropdown-toggle="dropdownAvatar"
                 type="button"
                 onClick={handleToggle}
+                className="focus:outline-none"
             >
-                <span className="sr-only">Open user menu</span>
+                <span className="sr-only">
+                    {isOpen ? "Close menu" : "Open menu"}
+                </span>
                 <svg
-                    
-                    
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className={`w-10 h-10 ${isOpen ? 'text-yellow-800' : 'text-slate-300'}`}
-                    
-                    
+                    className={`w-10 h-10 transform transition-transform duration-300 ease-in-out ${
+                        isOpen
+                            ? "rotate-180 text-slate-300 "
+                            : "rotate-0 text-slate-300"
+                    }`}
                 >
-                    <path
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
+                    {isOpen ? (
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    ) : (
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    )}
                 </svg>
             </button>
 

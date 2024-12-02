@@ -8,7 +8,7 @@ const Project = () => {
         <div>
             <Banner />
 
-            <div className="border-b border-gray-200 dark:border-gray-700 flex flex-wrap justify-evenly gap-y-5 mx-20 my-8">
+            <div className="border-b border-gray-200 dark:border-gray-700 flex flex-wrap justify-evenly gap-y-5 mx-8 my-8 md:mx-10">
                 {projectData.map((project, index) => (
                     <ProjectCard key={project.id} project={project}/>
                 ))}

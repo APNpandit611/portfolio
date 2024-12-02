@@ -1,15 +1,20 @@
 import React from "react";
 import Social from "./Social.js"
 import Email from "./Email.js"
+import FooterSocial from "./FooterSocial.js";
 
 
 const Footer = () => {
     let date = new Date().getFullYear();
     return (
-        <div className="relative text-center w-full">
-            <p  className="py-8 text-slate-300 opacity-50 text-sm mt-1">Abhishek Pandit &#169; {date} - Finland</p>
+        <div className="flex flex-col gap-y-6 text-center w-full">
+            <div className="md:hidden flex items-center justify-center">
+                <FooterSocial/>
+            </div>
+            <p  className="text-slate-300 opacity-50 text-sm">Abhishek Pandit &#169; {date} - Finland</p>
             <Social />
             <Email />
+            
         </div>
     )
 }
