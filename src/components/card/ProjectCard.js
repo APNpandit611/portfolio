@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
                     <a href={code}>
                         <button
                             type="button"
-                            className="w-full text-xs md:text-sm bg-slate-800 text-slate-300 py-2 px-4 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
+                            className="w-full text-sm bg-slate-800 text-slate-300 py-2 px-4 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
                         >
                             View Code
                         </button>
@@ -30,7 +30,7 @@ const ProjectCard = (props) => {
                     <a href={live}>
                         <button
                             type="button"
-                            className="w-full text-xs sm:text-sm md:w-full bg-slate-800 text-slate-300 py-2 px-5 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
+                            className="w-full text-sm  md:w-full bg-slate-800 text-slate-300 py-2 px-5 rounded-lg hover:bg-indigo-500 hover:text-white transition transform duration-300 hover:scale-105 cursor-pointer"
                         >
                             Live Demo
                         </button>
