@@ -36,7 +36,7 @@ export const projectData = [
         "code":"https://github.com/APNpandit611/product-page-react",
         "live":"https://674d8560b97b14dad76d51bb--product-page-prac.netlify.app/",
         "image":productPagePractice,
-        "description": "A brief description of the project goes here, explaining key features and technology stack."
+        "description": "A practice app to test the filter feature, Accordian, Google OAuth, Redux-toolkit"
     },
 
 

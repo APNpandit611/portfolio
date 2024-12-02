@@ -26,8 +26,8 @@ const Dropdown = () => {
                     stroke="currentColor"
                     className={`w-10 h-10 transform transition-transform duration-300 ease-in-out ${
                         isOpen
-                            ? "rotate-180 text-slate-300 "
-                            : "rotate-0 text-slate-300"
+                            ? "text-slate-300 rotate-180"
+                            : "text-slate-300 rotate-0"
                     }`}
                 >
                     {isOpen ? (
@@ -52,7 +52,7 @@ const Dropdown = () => {
                 <ul className="flex flex-col gap-3">
                     <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
                         <Link
-                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-red-500 cursor-pointer duration 300 ease"
+                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500 cursor-pointer duration 300 ease"
                             to="/"
                         >
                             Projects
@@ -60,7 +60,7 @@ const Dropdown = () => {
                     </li>
                     <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
                         <Link
-                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-red-500 cursor-pointer duration 300 ease"
+                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500 cursor-pointer duration 300 ease"
                             to="/about"
                         >
                             About
@@ -68,7 +68,7 @@ const Dropdown = () => {
                     </li>
                     <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
                         <Link
-                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-red-500 cursor-pointer duration 300 ease"
+                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500 cursor-pointer duration 300 ease"
                             to="/contact"
                         >
                             Contact

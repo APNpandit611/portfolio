@@ -7,26 +7,27 @@ const Nav = () => {
             <ul className="flex items-center justify-between mt-1 ">
                 <li className="">
                     <Link
-                        className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-red-500 cursor-pointer duration 300 ease "
+                        className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500
+ cursor-pointer duration 300 ease "
                         to="/"
                     >
                         Projects
                     </Link>
                 </li>
-            
+
                 <li className="">
-                
                     <Link
-                        className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-red-500 cursor-pointer duration 300 ease "
+                        className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500
+ cursor-pointer duration 300 ease "
                         to="/about"
                     >
-                       
                         About
                     </Link>
                 </li>
                 <li className="">
                     <Link
-                        className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-red-500 cursor-pointer duration 300 ease "
+                        className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500
+ cursor-pointer duration 300 ease "
                         to="/contact"
                     >
                         Contact
