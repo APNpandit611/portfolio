@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProjectCard = (props) => {
-    const { title, code, live, image } = props.project;
+    const { title, code, live, image, description } = props.project;
     return (
         <div className="border-2 border-gray-500 rounded-md w-full md:w-2/5 mb-8">
             <img
@@ -14,12 +14,11 @@ const ProjectCard = (props) => {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-200 mb-2 text-center">
                     {title}
                 </h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-400 text-center mb-4">
-                    A brief description of the project goes here, explaining key
-                    features and technology stack.
+                <p className="text-xs sm:text-sm md:text-base text-slate-400 text-center mb-2">
+                    {description}
                 </p>
 
-                <div className="flex flex-col md:flex-row justify-evenly mt-3 space-y-3 md:space-y-0 md:space-x-4">
+                <div className="flex flex-col md:flex-row justify-evenly space-y-3 md:space-y-0 md:space-x-4 mb-2">
                     <a href={code}>
                         <button
                             type="button"
