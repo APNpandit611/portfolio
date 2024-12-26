@@ -6,11 +6,12 @@ import productPagePractice from "../assets/product-page-practice.png"
 export const projectData = [
     {
         "id":1,
-        "title":"Ingo Clone",
-        "code":"https://github.com/APNpandit611/ingo-clone",
-        "live":"https://6707a381fb46d9b4029d8da3--fantastic-valkyrie-b287f4.netlify.app/",
-        "image":ingoClone,
-        "description": "My first classic webiste with HTML, CSS and JS. A clone of Wordpress webiste."
+        "title":"Feedbook Social Media App",
+        "code":"https://github.com/APNpandit611/feedbook",
+        "live":"https://feedbook-48dd.onrender.com/",
+        "image":feedbook,
+        "description": "A fullstack app build with MERN stack. User can create, view, update, delete post."
+
     },
     {
         "id":2,
@@ -19,16 +20,15 @@ export const projectData = [
         "live":"https://mern-crud-jprx.onrender.com/",
         "image":mernCrud,
         "description": "An app build to explore the CRUD opertion in MERNstack"
-
+        
     },
     {
         "id":3,
-        "title":"Feedbook Social Media App",
-        "code":"https://github.com/APNpandit611/feedbook",
-        "live":"https://feedbook-48dd.onrender.com/",
-        "image":feedbook,
-        "description": "A fullstack app build with MERN stack. User can create, view, update, delete post."
-
+        "title":"Ingo Clone",
+        "code":"https://github.com/APNpandit611/ingo-clone",
+        "live":"https://6707a381fb46d9b4029d8da3--fantastic-valkyrie-b287f4.netlify.app/",
+        "image":ingoClone,
+        "description": "My first classic webiste with HTML, CSS and JS. A clone of Wordpress webiste."
     },
     {
         "id":4,

@@ -45,14 +45,14 @@ const Dropdown = () => {
 
             <div
                 id="dropdownAvatar"
-                className={`absolute right-0 dropdown-menu ${
-                    isOpen ? "block" : "hidden"
-                } py-10 max-h-64 overflow-auto divide-y divide-gray-100 rounded-lg shadow w-full h-full dark:bg-gray-800 dark:divide-gray-600`}
+                className={`absolute right-0 z-50 dropdown-menu ${
+                    isOpen ? "block " : "hidden"
+                } flex items-center justify-center py-10 h-screen divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-800 dark:divide-gray-600`}
             >
-                <ul className="flex flex-col gap-3">
-                    <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
+                <ul className="flex flex-col gap-10">
+                    <li className=" py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
                         <Link
-                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500 cursor-pointer duration 300 ease"
+                            className="text-2xl font-semibold text-slate-300 duration-300 ease  hover:text-indigo-500 cursor-pointer duration 300 ease"
                             to="/"
                         >
                             Projects
@@ -60,7 +60,7 @@ const Dropdown = () => {
                     </li>
                     <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
                         <Link
-                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500 cursor-pointer duration 300 ease"
+                            className="text-2xl font-semibold text-slate-300 duration-300 ease  hover:text-indigo-500 cursor-pointer duration 300 ease"
                             to="/about"
                         >
                             About
@@ -68,7 +68,7 @@ const Dropdown = () => {
                     </li>
                     <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
                         <Link
-                            className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500 cursor-pointer duration 300 ease"
+                            className="text-2xl font-semibold text-slate-300 duration-300 ease  hover:text-indigo-500 cursor-pointer duration 300 ease"
                             to="/contact"
                         >
                             Contact

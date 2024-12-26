@@ -24,7 +24,7 @@ const Nav = () => {
                         About
                     </Link>
                 </li>
-                <li className="">
+                {/* <li className="">
                     <Link
                         className="font-semibold text-slate-300 duration-300 ease ml-16 hover:text-indigo-500
  cursor-pointer duration 300 ease "
@@ -32,7 +32,7 @@ const Nav = () => {
                     >
                         Contact
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </div>
     );
