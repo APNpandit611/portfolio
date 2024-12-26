@@ -66,14 +66,7 @@ const Dropdown = () => {
                             About
                         </Link>
                     </li>
-                    <li className="py-3 transition transform hover:-translate-x-0.5 hover:-translate-y-0.5">
-                        <Link
-                            className="text-2xl font-semibold text-slate-300 duration-300 ease  hover:text-indigo-500 cursor-pointer duration 300 ease"
-                            to="/contact"
-                        >
-                            Contact
-                        </Link>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
