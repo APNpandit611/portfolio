@@ -1,7 +1,6 @@
 import React from 'react'
 import Banner from "../banner/Banner.js";
-import { projectData } from "../../utils/projectData.js";
-import Button from '../banner/Button.js';
+
 const About = () => {
   return (
     <div className='h-[100%]'>
