@@ -71,7 +71,7 @@ const Dropdown = () => {
                 {isOpen && (
                     <motion.div
                         id="dropdownAvatar"
-                        className="absolute right-0 z-50 mt-2 w-96 rounded-lg shadow-xl bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5"
+                        className="absolute right-0 w-80 mt-2 rounded-lg shadow-xl bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5"
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="dropdownUserAvatarButton"

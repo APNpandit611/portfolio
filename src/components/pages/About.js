@@ -7,12 +7,12 @@ const About = () => {
         <div className="min-h-screen text-slate-300">
             <Banner buttonName="Contact" />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="max-w-7xl px-6 py-16 md:mx-10">
                 <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-white">
                     About Me
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-6">
                     {/* Left Column */}
                     
                         <div className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-indigo-400">
@@ -61,7 +61,7 @@ const About = () => {
                 </div>
 
                 {/* Call to Action */}
-                <div className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-indigo-400 mt-16 mx-16 text-center">
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-indigo-400 mt-16 mx-6 text-center">
                 {/* <div className="mt-16 mx-16 text-center"> */}
                     <p className="text-lg mb-6">
                         I’m continuously expanding my knowledge and actively improving my full stack development skills, ready to adapt to new technologies and challenges.
