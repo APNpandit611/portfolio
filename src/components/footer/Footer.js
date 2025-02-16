@@ -7,7 +7,7 @@ import FooterSocial from "./FooterSocial.js";
 const Footer = () => {
     let date = new Date().getFullYear();
     return (
-        <div className="flex flex-col gap-y-6 text-center w-full">
+        <div className="flex flex-col gap-y-6 text-center w-full mb-6">
             <div className="md:hidden flex items-center justify-center">
                 <FooterSocial/>
             </div>
