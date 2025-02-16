@@ -2,8 +2,9 @@ import React from "react";
 
 const Logo = () => {
     return (
-        <h2
-            className="
+        <a href="/">
+            <h2
+                className="
                     text-3xl
                     text-slate-300
                     font-bold
@@ -14,9 +15,10 @@ hover:text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-indigo-70
                     cursor-pointer
                     
                 "
-        >
-            Abhishek
-        </h2>
+            >
+                Abhishek
+            </h2>
+        </a>
     );
 };
 
